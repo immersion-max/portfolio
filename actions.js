@@ -7,7 +7,7 @@ const skills = [  "HTML", "CSS", "JavaScript", "Python", "Github", "Github Deskt
 
 document.getElementById('skills-tools-list').innerHTML = skills.map(skill => `<div class="skill">${skill}</div>`).join('');
 
-//classes too
+
 //dynamically add work experience
 const jobs = [
     {
