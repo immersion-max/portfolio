@@ -43,14 +43,87 @@
 
 
 
+
+
+
+/* 1. Fix the property value (0 instead of none) */
+.accordion {
+    border-radius: 0;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 0.2vh solid var(--deep-purple);
+    border-radius: 0;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-body {
+    background-color: var(--sand);
+    color: var(--deep-purple);
+    font-size: 2.5vh;
+}
+
+/* 2. Target the specific Bootstrap selectors that force rounding */
+.accordion-button,
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button.collapsed {
+    background-color: var(--ocean-blue);
+    color: var(--sand);
+    font-size: 3vh;
+    border-radius: 0 !important; /* !important ensures we override Bootstrap's internal logic */
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--ocean-blue);
+    color: var(--sand);
+    box-shadow: none; /* Optional: Removes the default blue shadow/glow */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: 0; /* Ensures no browser-default outlines appear */
+}
+
+/* Work Section Styles */
+.work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.card {
+    border: none;
+    border-radius: none;
+}
+
+.card-body {
+    background-color: var(--ocean-blue);
+    color: var(--sand);
+    font-size: 2.5vh;
+}
+
+/* Skills Section Styles */
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
 .skill {
     display: inline-block;
-    margin: 1vh 1vw;
+    /*margin: 1vh 1vw;*/
     width: fit-content;
-    background-color: var(--deep-purple);
+    background-color: var(--ocean-blue);
     color: var(--sand);
     padding: 1vh 1vw;
-    border-radius: 1vh;
     font-size: 2.5vh;
 }
 
