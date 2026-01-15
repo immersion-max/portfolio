@@ -7,9 +7,14 @@
     --rich-red: #71251b;
 }
 
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+
 .background-colored {
     background-color: var(--color);
-    padding: 5vh 15vw;
+    padding: 0vh 5vw;
+    margin: 0vh 15vw;
 }
 
 .background-image {
@@ -17,6 +22,15 @@
     width: 100%;
     background-size: cover; 
     background-position: center;
+    position: fixed;
+    z-index: -20;
+}
+
+.circle-image {
+    clip-path: circle(50%);
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
 }
 
 .page-title {
@@ -25,25 +39,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 50vh;
+    padding-top: 27vh;
 }
 
-.section-container {
-    color: var(--color);
+.headshot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
 }
 
 .links-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vh 2vw;
-    gap: 5vw;
+    /*padding: 2vh 2vw;*/
+    gap: 4vw;
     font-size: 3vh;
+    height: 10vh;
 }
 
+.section-spacer {
+    height: 5vh;
+    width: 100%;
+}
 
+.sidenav {
+  height: 100vh;
+  width: 10vw;
+  position: fixed; /* Stays in place even when scrolling */
+  z-index: 1000;   /* High number ensures it stays on top of content */
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
 
+/* this element is enlarged to fit its parent container sidenav (thus 100vh)
+this allows justifycontent and alignitems to work within this container */
+.sidenav-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+.section-container {
+    color: var(--color);
+}
 
 
 /* 1. Fix the property value (0 instead of none) */
@@ -127,25 +171,7 @@
     font-size: 2.5vh;
 }
 
-.sidenav {
-  height: 100vh;
-  width: 10vw;
-  position: fixed; /* Stays in place even when scrolling */
-  z-index: 1000;   /* High number ensures it stays on top of content */
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-}
 
-/* this element is enlarged to fit its parent container sidenav (thus 100vh)
-this allows justifycontent and alignitems to work within this container */
-.sidenav-elements {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
 a {
     text-decoration: none;

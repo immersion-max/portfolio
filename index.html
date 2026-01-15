@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <title>Sample HTML Page</title>
+    <title>Portfolio - Max Davis</title>
 </head>
 <body>
 
@@ -17,9 +17,9 @@
         <div class="sidenav-elements">
             <a href="#about">About</a>
             <hr>
-            <a href="#projects">Project</a>
+            <a href="#projects">Projects</a>
             <hr>
-            <a href="#skills & tools">Skills & Tools</a>
+            <a href="#skills & tools">Skills</a>
             <hr>
             <a href="#experience">Experience</a>
         </div>
@@ -27,12 +27,22 @@
 
 
     <div class="background-image" style="background-image: url(assets/PortlandHeadLightHiFi.jpg);" alt="Portland Head Light">
+        
+    </div>
+
+    <div class="background-colored" style="--color: var(transparent)">
+        <!--<div class="spacer"></div>-->
         <div class="page-title">
             Hi, I'm Max Davis
+        </div>
+        <div class="headshot-container">
+            <img src="assets/headshot.jpg" alt="Headshot of Max Davis" class="circle-image">
         </div>
         <div class="section-container">
             <!--style="margin: 0vh 1vw 0vh 0vw;"-->
             <div class="links-container">
+                <a href="tel:+1 (207) 360-9114"><u>+1 (207) 360-9114</u></a>
+                <a href="mailto:mdavis7@conncoll.edu"><u>mdavis7@conncoll.edu</u></a>
                 <a href="assets/Resume - Max Davis.pdf" target="_blank"  download><u>Resume</u></a>
                 <a href="https://www.linkedin.com/in/max-davis-6218112a2/" target="_blank"><u>LinkedIn</u></a>
                 <a href="https://github.com/immersion-max" target="_blank"><u>GitHub</u></a>
@@ -42,6 +52,7 @@
 
     <div class="background-colored" style="--color: var(--rich-red)">
         <!-- About Section -->
+        <div class="section-spacer"></div>
         <div class="section-container" style="--color: var(--sand)" id="about">
             <h2>About</h2>
             <p>I'm a Second-year student at Connecticut College pursuing a major in computer science with an interest 
@@ -54,9 +65,9 @@
         <hr>
 
         <!-- Projects Section -->
+         <div class="section-spacer"></div>
         <div class="section-container" style="--color: var(--sand)" id="projects">
             <h2>Projects</h2>
-            <p>here is a paragraph about my projects</p>
             <div class="accordion" id="projects-list">
                 <!-- Projects will be dynamically added here -->
             </div>
@@ -65,9 +76,9 @@
         <hr>
 
         <!-- Skills & Tools Section -->
+        <div class="section-spacer"></div>
         <div class="section-container" style="--color: var(--sand)" id="skills & tools">
             <h2>Skills & Tools</h2>
-            <p>here is a paragraph about my skills and tools</p>
             <div class="skills-container" id="skills-tools-list">
                 <!-- Skills and tools will be dynamically added here -->
             </div>
@@ -76,12 +87,15 @@
         <hr>
 
         <!-- Experience Section -->
+        <div class="section-spacer"></div>
         <div class="section-container" style="--color: var(--sand)" id="experience">
             <h2>Experience</h2>
             <div class="work-container" id="work-accordion">
                 <!-- Work experience items will be dynamically added here -->
             </div>
         </div>
+
+        <div class="section-spacer"></div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->

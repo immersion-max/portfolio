@@ -87,7 +87,7 @@ const projects = [
 document.getElementById('projects-list').innerHTML = projects.map(project => `
     <div class="accordion-item">
         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${projects.indexOf(project)}" aria-expanded="true" aria-controls="collapse${projects.indexOf(project)}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${projects.indexOf(project)}" aria-expanded="false" aria-controls="collapse${projects.indexOf(project)}">
                 ${project.title}
             </button>
         </h2>
