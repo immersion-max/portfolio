@@ -13,8 +13,14 @@ const jobs = [
     {
         title: "Intro to Computer Science Teaching Assistant",
         dates: "Fall 2025 - Present",
-        description:    `As one of two TAs in lab sessions, I assisted 15 students with their Python based work in Jupyter labs. 
+        description:    `As one of two TAs in lab sessions, I assisted 10 students with their Python based work in Jupyter labs. 
                         I used communication and analytical skills to explain theory, debug code, and provide feedback on readable syntax.`
+    },
+    {
+        title: "Web Dev & Tech Teaching Assistant",
+        dates: "Spring 2025 - Present",
+        description:    `Holds out-of-class instruction sessions to assist 13 students with coursework in HTML, CSS, JavaScript,
+                         Ruby on Rails, and Bootstrap.`
     }
     
 ];
